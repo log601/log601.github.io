@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9]>
+<script type="text/javascript">
+alert("你的IE浏览器的版本hin尴尬：比老版本还差！！！（建议下载Firefox浏览器）");
+</script>
+<![endif]-->
+<!--[if lte IE 7]>
+<script type="text/javascript">
+alert("你的IE浏览器的版本有点老（建议下载Firefox浏览器）");
+</script>
+<![endif]-->
+<!--[if gte IE 10]>
+<script type="text/javascript">
+alert("你的浏览器是IE10或11：兼容性不是太好（建议下载Firefox浏览器）");
+</script>
+<![endif]-->
+<!--[if IE]>
+<script type="text/javascript">
+alert("你在用IE：请移步其他浏览器。（建议下载Firefox浏览器）");
+</script>
+<![endif]-->
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+
+    <link href="css/styles.css" rel="stylesheet" id="css">
+    <script type="text/javascript" href="js/script.js"></script>
+    <script type="text/javascript">
+        var SET = false;
+        function propertyChange(obj, stylename, property) {
+            obj.style[stylename] = property;
+        }
+
+    </script>
+    <title>主页 - LogEnglish - 和4quare一起学英语</title>
+</head>
+<body>
+    <h1>LogEnglish</h1>
+    <p>学语法到LogGrammer</p>
+
+    <div id="navhead" class="navhead">
+        <div class="search">搜索</div>
+        <div class="user"></div>
+    </div>
+
+    
+    <!-- collect 》 unitcollect 》 classcollect 》 lessoncollect -->
+    <div class="navcollect">
+        <div id="navcollectbackground" class="navcollectbackground"></div>
+        <button class="collect"
+                onfocus="propertyChange(navcollectbackground, 'left', '0px'); propertyChange(unitcollect,'left','0px')"
+         onblur="propertyChange(navcollectbackground, 'left', '-350px'); propertyChange(unitcollect,'left','-350px')">
+            <img alt="菜单" />
+        </button>
+        <ol id="unitcollect" class="unitchoice">
+            <li>
+                <button id="unit_word" class="unit ">
+                    词法
+                </button>
+                <ol id="class_word" class="classchoice">
+                    <li>
+                        <button id="beidanci" class="class"
+                                onmouseover="propertyChange(explainbottom, 'bottom', '0px'); explain.innerText='背单词：单击前往LogWord.top(已关闭)'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            背单词
+                        </button>
+                    </li>
+                    <li>
+                        <button id="cixing" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='词性：词的性质。背单词时必须要会的语法。此课会让你分辨同汉语意思的不同单词（如：四个成功success(n.u.) succeed(v.i.) successful(adj.) successfully(adv.)的分辨），你也会收获更大的单词量。'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            词性
+                        </button>
+                    </li>
+                    <li>
+                        <button id="gouci" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='非谓语动词：不作为谓语时的动词。由于本课非常重要，其被单列于词法中。此课会让你掌握并灵活地使用动名词、分词（现在分词和过去分词）及不定式'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            非谓语动词
+                        </button>
+                    </li>
+                    <li>
+                        <button id="gouci" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='词的特殊用法：旨在汇总特殊词的特殊用法。'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            词的特殊用法
+                        </button>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <button id="unit_sentence" class="unit">
+                    句法
+                </button>
+                <ol id="class_sentence" class="classchoice">
+                    <li>
+                        <button id="jvzichengfen" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='如果你没有学过或不了解下面的语法，请学习此课'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            第一课
+                        </button>
+                    </li>
+                    <li>
+                        <button id="shitai" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='简单的语气：语句的顺序。学习下面的课程，首先要学习此课。语序语态决定了语句中单词的顺序，包括 陈述句、疑问句 等。'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            简单的语气
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='基本的句子成分：单击前往LogWord.top'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            基本的句子成分
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class">
+                            时态
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class">
+                            被动语态
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class">
+                            虚拟语气
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='倒装：将句子‘反着说’。'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            倒装
+                        </button>
+                    </li>
+                    <li>
+                        <button id="yuqi" class="class"
+                                onmouseover="propertyChange(explainbottom,'bottom','0px'); explain.innerText='从句：这个句子充当一个句子成分。'"
+                                onmouseout="propertyChange(explainbottom,'bottom','-80px')">
+                            复杂句（从句）
+                        </button>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <!--放在右下角吧，快去改css！-->
+
+    <div id="explainbottom" class="explainbottom">
+        <p id="explain" class="explain">将鼠标移到块上，此处会显示必要的说明.</p>
+    </div>
+</body>
+</html>
