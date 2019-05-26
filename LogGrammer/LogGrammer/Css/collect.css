@@ -1,0 +1,89 @@
+﻿
+/*.navcollect {
+}*/
+
+.navcollectbackground {
+    position: fixed;
+    left: -350px;
+    top: 0px;
+    height: 100%;
+    width: 350px;
+    background: #224;
+}
+
+
+.collect {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 40px;
+    width: 50px;
+    border: none;
+    padding: 0px;
+    background: rgb(155, 221, 239);
+}
+
+
+    .collect:hover {
+        background: rgb(40, 233, 233);
+    }
+
+.unitchoice {
+    position: absolute;
+    top: 0px;
+    left: -350px;
+    width: 350px;
+    background: #224;
+}
+
+
+.collect:focus + .unitchoice {
+    left: 0px;
+    width: 350px;
+}
+
+.unit {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0%;
+    height: 40px;
+    color: white;
+    width: 350px;
+    font-size: large;
+}
+
+    .unit:hover {
+        border: none;
+    }
+
+
+
+.classchoice {
+    width: 350px;
+}
+
+    .classchoice:hover {
+        display: block;
+    }
+
+.unit:focus + .classchoice {
+    display: block;
+}
+
+
+.class {
+    margin-left: 20px;
+    right: 0px;
+    width: 300px;
+    border: none;
+    background: #224;
+    color: white;
+    font-size: large;
+    padding: 0px 0px;
+}
+
+    .class:hover {
+        padding: 0px 0px;
+        border: none;
+    }

@@ -1,0 +1,17 @@
+﻿
+.explainbottom {
+    position: fixed;
+    left: 400px;
+    right: 0px;
+    bottom: -80px;
+    height: 70px;
+    border: solid 5px;
+    border-color: cadetblue;
+    background: #eef;
+    padding: 0px;
+    font-size: small;
+}
+
+    .explainbottom p {
+        margin: 0;
+    }

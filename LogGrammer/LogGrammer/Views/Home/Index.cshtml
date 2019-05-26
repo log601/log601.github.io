@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Css/basic.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/header.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/collect.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/explainbottom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var SET = false;
+        function styleChange(obj, stylename, property) {
+            obj.style[stylename] = property;
+        }
+
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>log4quare</title>
+</head>
+<body>
+    @RenderPage("~/Models/_header.cshtml")
+    @RenderPage("~/Models/_collect.cshtml")
+    @RenderPage("~/Models/_explainbottom.cshtml")
+    <div> 
+    </div>
+</body>
+</html>

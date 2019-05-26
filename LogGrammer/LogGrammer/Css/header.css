@@ -1,0 +1,104 @@
+﻿
+
+.navhead {
+    position: fixed;
+    height: 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #558;
+}
+
+
+.search {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 250px;
+    width: 300px;
+}
+
+    .search .inputText {
+        position: absolute;
+        left: 75px;
+        width: 150px;
+        border: none;
+        border-radius: 10px;
+        padding: 0 10px;
+        background: #ccc;
+        font-size: medium;
+        color: #666;
+    }
+
+        .search .inputText:hover, .search .inputText:focus {
+            left: 0;
+            width: 250px;
+        }
+
+            .search .inputText:hover + .submit, .search .inputText:focus + .submit {
+                right: 0;
+            }
+
+
+    .search .submit {
+        position: absolute;
+        top: -2.5px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+        border: none;
+        color: #558;
+        border-radius: 50%;
+        background: #ccc;
+        font-weight: 900;
+    }
+
+.user {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 10px;
+    color: white;
+}
+
+    .user .notification:focus,
+    .user .menu:focus,
+    .user .head:focus {
+        background: #336;
+    }
+    .user .notification:hover,
+    .user .menu:hover,
+    .user .head:hover {
+        background: #99c;
+    }
+
+
+
+
+    .user .notification {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 165px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+
+    .user .menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 110px;
+        width: 50px;
+        border-radius: 5px;
+    }
+
+    .user .head {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 105px;
+        border-radius: 5px;
+    }
