@@ -22,11 +22,13 @@
     padding: 0px;
     background: rgb(155, 221, 239);
 }
-
-
     .collect:hover {
         background: rgb(40, 233, 233);
     }
+
+
+
+
 
 .unitchoice {
     position: absolute;
@@ -36,11 +38,14 @@
     background: #224;
 }
 
-
 .collect:focus + .unitchoice {
     left: 0px;
     width: 350px;
 }
+
+
+
+
 
 .unit {
     border: none;
@@ -59,6 +64,7 @@
 
 
 
+
 .classchoice {
     width: 350px;
 }
@@ -70,6 +76,7 @@
 .unit:focus + .classchoice {
     display: block;
 }
+
 
 
 .class {
@@ -87,3 +94,28 @@
         padding: 0px 0px;
         border: none;
     }
+
+
+
+
+.lessonchoice {
+    height: 0;
+    width: 300px;
+    opacity: 0;
+    transform: translate(-350px, -50px);
+    color: white;
+}
+
+    .class:hover + .lessonchoice,.lessonchoice:hover {
+        height: initial;
+        opacity: 1;
+        transform: translate(25px,0px);
+    }
+
+
+
+.lesson:hover {
+    background: rgba(40, 233, 233, 0.84);
+    padding: 3px 5px;
+    border: solid 2px #0094cc;
+}

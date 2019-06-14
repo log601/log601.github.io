@@ -66,6 +66,7 @@
     .user .head:focus {
         background: #336;
     }
+
     .user .notification:hover,
     .user .menu:hover,
     .user .head:hover {
