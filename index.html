@@ -2,10 +2,10 @@
 
 <html>
 <head>
-    <link href="~/Css/basic.css" rel="stylesheet" type="text/css" />
-    <link href="~/Css/header.css" rel="stylesheet" type="text/css" />
-    <link href="~/Css/collect.css" rel="stylesheet" type="text/css" />
-    <link href="~/Css/explainbottom.css" rel="stylesheet" type="text/css" />
+    <link href="Css/basic.css" rel="stylesheet" type="text/css" />
+    <link href="Css/header.css" rel="stylesheet" type="text/css" />
+    <link href="Css/collect.css" rel="stylesheet" type="text/css" />
+    <link href="Css/explainbottom.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         var SET = false;
         function styleChange(obj, stylename, property) {
@@ -21,7 +21,7 @@
 
 
     <!--@RenderPage("~/Models/_header.cshtml")-->
-	
+
     <div id="navhead" class="navhead">
         <div class="search">
             <input type="text" class="inputText" value="搜索" />
@@ -31,148 +31,155 @@
             <div class="notification">通知</div>
             <div class="menu">=</div>
             <div class="head">
-                @*<img />*@
-                sign in   sign up▽
+                sign in
             </div>
         </div>
     </div>
     <!--@RenderPage("~/Models/_collect.cshtml")-->
-	<!-- collect 》 unitcollect 》 classcollect 》 lessoncollect -->
-	<div class="navcollect">
-		<div id="navcollectbackground" class="navcollectbackground"></div>
-		<button class="collect"
-				onfocus="styleChange(navcollectbackground, 'left', '0px'); styleChange(unitcollect,'left','0px')"
-				onblur="styleChange(navcollectbackground, 'left', '-350px'); styleChange(unitcollect,'left','-350px')">
-			<img src="pic/left.png" alt="菜单" />
-		</button>
-		<ol id="unitcollect" class="unitchoice">
-			<li>
-				<button id="unit_word" class="unit ">
-					词法
-				</button>
-				<ol id="class_word" class="classchoice">
-					<li>
-						<button id="beidanci" class="class"
-								onmouseover="styleChange(explainbottom, 'bottom', '0px'); explain.innerText='背单词：单击前往LogWord.top(已关闭)'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							背单词
-						</button>
-					</li>
-					<li>
-						<button id="affix" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词缀：词的前后缀。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							词缀
-						</button>
-					</li>
-					<li>
-						<button id="part-of-speech" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词性：词的性质。背单词时必须要会的语法。此课会让你分辨同汉语意思的不同单词（如：四个成功success(n.u.) succeed(v.i.) successful(adj.) successfully(adv.)的分辨），你也会收获更大的单词量。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							词性
-						</button>
-						<ol id="lesson_cixing">
-							<li id="noun" class="lesson">名词</li>
-							<li id="article" class="lesson">冠词</li>
-							<li id="numberal" class="lesson">数词</li>
-							<li id="pronoun" class="lesson">代词</li>
-							<li id="adjective" class="lesson">形容词</li>
-							<li id="adverb" class="lesson">副词</li>
-							<li id="basicverb" class="lesson">基本的动词</li>
-							<li id="preposition" class="lesson">介词</li>
-							<li id="conjunction" class="lesson">连词</li>
-							<li id="interjection" class="lesson">感叹词</li>
-							<li id="note" class="lesson">注意事项</li>
-							<li id="summary" class="lesson">小结</li>
-						</ol>
-					</li>
-					<li>
-						<button id="nonfinitive" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='非谓语动词：不作为谓语时的动词。由于本课非常重要，其被单列于词法中。此课会让你掌握并灵活地使用动名词、分词（现在分词和过去分词）及不定式'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							非谓语动词
-						</button>
-					</li>
-					<!--<li>
-						<button id="gouci" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词的特殊用法：旨在汇总特殊词的特殊用法。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							词的特殊用法
-						</button>
-					</li>-->
-				</ol>
-			</li>
-			<li>
-				<button id="unit_sentence" class="unit">
-					句法
-				</button>
-				<ol id="class_sentence" class="classchoice">
-					<li>
-						<button id="firstlesson" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='如果你没有学过或不了解下面的语法，请学习此课'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							第一课
-						</button>
-					</li>
-					<li>
-						<button id="basicconstituent" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='简单的语气：语句的顺序。学习下面的课程，首先要学习此课。语序语态决定了语句中单词的顺序，包括 陈述句、疑问句 等。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							基本的句子成分
-						</button>
-					</li>
-					<li>
-						<button id="basicmood" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='基本的句子成分：单击前往LogWord.top'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							基本的语气
-						</button>
-					</li>
-					<li>
-						<button id="tense" class="class">
-							时态
-						</button>
-					</li>
-					<li>
-						<button id="passivity" class="class">
-							被动语态
-						</button>
-					</li>
-					<li>
-						<button id="subjunctivemood" class="class">
-							虚拟语气
-						</button>
-					</li>
-					<li>
-						<button id="inversion" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='倒装：将句子‘反着说’。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							倒装
-						</button>
-					</li>
-					<li>
-						<button id="clause" class="class"
-								onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='从句：这个句子充当一个句子成分。'"
-								onmouseout="styleChange(explainbottom,'bottom','-80px')">
-							复杂句（从句）
-						</button>
-					</li>
-					<li>
-						<button id="dulizhuge" class="class">
-							独立主格
-						</button>
-					</li>
-				</ol>
-			</li>
-		</ol>
-	</div>
+    <!-- collect 》 unitcollect 》 classcollect 》 lessoncollect -->
+    <div class="navcollect">
+        <div id="navcollectbackground" class="navcollectbackground"></div>
+        <button class="collect"
+                onfocus="styleChange(navcollectbackground, 'left', '0px'); styleChange(unitcollect,'left','0px')"
+                onblur="styleChange(navcollectbackground, 'left', '-350px'); styleChange(unitcollect,'left','-350px')">
+            <img src="pic/left.png" alt="菜单" />
+        </button>
+        <ol id="unitcollect" class="unitchoice">
+            <li>
+                <button id="unit_word" class="unit ">
+                    词法
+                </button>
+                <ol id="class_word" class="classchoice">
+                    <li>
+                        <button id="chaci" class="class chaci">
+                            查单词
+                        </button>
+                    </li>
+                    <li>
+                        <button id="affix" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词缀：词的前后缀。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            词缀
+                        </button>
+                    </li>
+                    <li>
+                        <button id="part-of-speech" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词性：词的性质。背单词时必须要会的语法。此课会让你分辨同汉语意思的不同单词（如：四个成功success(n.u.) succeed(v.i.) successful(adj.) successfully(adv.)的分辨），你也会收获更大的单词量。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            词性
+                        </button>
+                        <ol id="lesson_cixing" class="lessonchoice">
+                            <li id="noun" class="lesson">名词</li>
+                            <li id="article" class="lesson">冠词</li>
+                            <li id="numberal" class="lesson">数词</li>
+                            <li id="pronoun" class="lesson">代词</li>
+                            <li id="adjective" class="lesson">形容词</li>
+                            <li id="adverb" class="lesson">副词</li>
+                            <li id="basicverb" class="lesson">基本的动词</li>
+                            <li id="preposition" class="lesson">介词</li>
+                            <li id="conjunction" class="lesson">连词</li>
+                            <li id="interjection" class="lesson">感叹词</li>
+                            <li id="note" class="lesson">注意事项</li>
+                            <li id="summary" class="lesson">小结</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button id="nonfinitive" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='非谓语动词：不作为谓语时的动词。由于本课非常重要，其被单列于词法中。此课会让你掌握并灵活地使用动名词、分词（现在分词和过去分词）及不定式'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            非谓语动词
+                        </button>
+                    </li>
+                    <!--<li>
+                        <button id="gouci" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='词的特殊用法：旨在汇总特殊词的特殊用法。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            词的特殊用法
+                        </button>
+                    </li>-->
+                </ol>
+            </li>
+            <li>
+                <button id="unit_sentence" class="unit">
+                    句法
+                </button>
+                <ol id="class_sentence" class="classchoice">
+                    <li>
+                        <button id="firstlesson" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='如果你没有学过或不了解下面的语法，请学习此课'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            第一课
+                        </button>
+                    </li>
+                    <li>
+                        <button id="basicconstituent" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='简单的语气：语句的顺序。学习下面的课程，首先要学习此课。语序语态决定了语句中单词的顺序，包括 陈述句、疑问句 等。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            基本的句子成分
+                        </button>
+                        <ol id="lesson_basicconstituent" class="lessonchoice">
+                            <li id="subject" class="lesson">s</li>
+                            <li id="object" class="lesson">o</li>
+                            <li id="aa" class="lesson">a</li>
+                            <li id="bb" class="lesson">b</li>
+                            <li id="cc" class="lesson">b</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <button id="basicmood" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='基本的句子成分：单击前往LogWord.top'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            基本的语气
+                        </button>
+                    </li>
+                    <li>
+                        <button id="tense" class="class">
+                            时态
+                        </button>
+                    </li>
+                    <li>
+                        <button id="passivity" class="class">
+                            被动语态
+                        </button>
+                    </li>
+                    <li>
+                        <button id="subjunctivemood" class="class">
+                            虚拟语气
+                        </button>
+                    </li>
+                    <li>
+                        <button id="inversion" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='倒装：将句子‘反着说’。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            倒装
+                        </button>
+                    </li>
+                    <li>
+                        <button id="clause" class="class"
+                                onmouseover="styleChange(explainbottom,'bottom','0px'); explain.innerText='从句：这个句子充当一个句子成分。'"
+                                onmouseout="styleChange(explainbottom,'bottom','-80px')">
+                            复杂句（从句）
+                        </button>
+                    </li>
+                    <li>
+                        <button id="dulizhuge" class="class">
+                            独立主格
+                        </button>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
 
     <!--@RenderPage("~/Models/_explainbottom.cshtml")-->
-	
-	<div id="explainbottom" class="explainbottom">
-		<p id="explain" class="explain">将鼠标移到块上，此处会显示必要的说明.</p>
-	</div>
-    <div> 
+
+    <div id="explainbottom" class="explainbottom">
+        <p id="explain" class="explain">将鼠标移到块上，此处会显示必要的说明.</p>
+    </div>
+    <div class="content">
+        <div class="tongxuelu">
+            <a class="enterlu" href="tongxulu.html">点击写同学录</a>
+        </div>
     </div>
 </body>
 </html>
